@@ -45,3 +45,12 @@ group :development do
   gem 'spring'
 end
 
+gem 'devise'
+
+gem "cancan"
+
+gem 'simple_form'
+
+gem 'seed_dump'
+
+gem 'bootstrap'
