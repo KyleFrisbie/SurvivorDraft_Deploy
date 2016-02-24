@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :seasons
+  resources :tribes
+  resources :drafters
   resources :survivors
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tribe.name %>
+</p>
+
+<p>
+  <strong>Tribe generation:</strong>
+  <%= @tribe.tribe_generation %>
+</p>
+
+<p>
+  <strong>Immunity wins:</strong>
+  <%= @tribe.immunity_wins %>
+</p>
+
+<p>
+  <strong>Reward wins:</strong>
+  <%= @tribe.reward_wins %>
+</p>
+
+<%= link_to 'Edit', edit_tribe_path(@tribe) %> |
+<%= link_to 'Back', tribes_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  tribe_generation: 1
+  immunity_wins: 1
+  reward_wins: 1
+
+two:
+  name: MyString
+  tribe_generation: 1
+  immunity_wins: 1
+  reward_wins: 1
