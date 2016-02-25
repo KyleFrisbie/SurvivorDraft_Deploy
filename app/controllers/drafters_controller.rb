@@ -1,5 +1,5 @@
 class DraftersController < ApplicationController
-  before_action :set_drafter, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, :set_drafter, only: [:show, :edit, :update, :destroy]
 
   # GET /drafters
   # GET /drafters.json

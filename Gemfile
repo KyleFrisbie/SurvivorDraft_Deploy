@@ -47,10 +47,10 @@ end
 
 gem 'devise'
 
-gem "cancan"
+gem 'cancan'
 
 gem 'simple_form'
 
 gem 'seed_dump'
 
-gem 'bootstrap'
+gem 'bootstrap-sass'

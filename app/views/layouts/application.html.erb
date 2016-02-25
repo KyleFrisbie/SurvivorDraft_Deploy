@@ -2,16 +2,39 @@
 <html>
 <head>
   <title>SurvivorDraft</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="navbar-header navbar-left">
+          <p class="navbar-brand">Survivor Draft</p>
+        </div>
+        <div class="navbar-right">
+          <%= button_to 'Log Out', destroy_user_session_path, class: 'btn btn-default navbar-btn', method: :get %>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 
-<%= yield %>
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-12">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <%= yield %>
+    </div>
+  </div>
+
+</div>
 
 </body>
 </html>

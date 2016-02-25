@@ -15,5 +15,27 @@
   <%= @drafter.losses %>
 </p>
 
+<h1>Listing Survivors</h1>
+
+<table class="table-striped">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Photo url</th>
+    <th>Elimination number</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @drafter.survivors.each do |survivor| %>
+      <tr>
+        <td><%= survivor.name %></td>
+        <td><%= image_tag survivor.photo_url %></td>
+        <td><%= survivor.elimination_number %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
 <%= link_to 'Edit', edit_drafter_path(@drafter) %> |
 <%= link_to 'Back', drafters_path %>

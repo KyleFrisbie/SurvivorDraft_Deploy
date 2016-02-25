@@ -11,5 +11,9 @@
  * file per style scope.
  *
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
- @import "bootstrap"
+body {
+  padding-top: 50px;
+}

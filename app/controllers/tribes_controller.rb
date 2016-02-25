@@ -1,5 +1,5 @@
 class TribesController < ApplicationController
-  before_action :set_tribe, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, :set_tribe, only: [:show, :edit, :update, :destroy]
 
   # GET /tribes
   # GET /tribes.json
